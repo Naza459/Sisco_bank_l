@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+#integracion de mostrar usuario
+<%= render @user_e %>
+
+<div> 
+<button class="btn btn-outline-info"> <%= link_to "Editar este usuario", edit_user_e_path(@user_e) %></button>|
+<button type="button" class="btn btn-outline-warning"><%= link_to "Volver a usuarios", user_es_path %></button>
+
+<div class="col-md-10" style="text-center"> 
+  <%= button_to "Eliminar este usuario", @user_e, method: :delete %>#Button eliminar cambiar estilos
+  </div>
+</div>

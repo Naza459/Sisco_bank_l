@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_persona: MyText
+  numero_documento: 1
+  fecha_inicial: 2022-11-08 19:41:44
+  fecha_vencimiento: 2022-11-08 19:41:44
+  nombre: MyText
+  correo_electronico: MyText
+  telefono_principal: 1
+  telefono_secundario: 1
+
+two:
+  tipo_persona: MyText
+  numero_documento: 1
+  fecha_inicial: 2022-11-08 19:41:44
+  fecha_vencimiento: 2022-11-08 19:41:44
+  nombre: MyText
+  correo_electronico: MyText
+  telefono_principal: 1
+  telefono_secundario: 1

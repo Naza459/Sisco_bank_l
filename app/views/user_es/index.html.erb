@@ -1,0 +1,15 @@
+<p style="color: blue"><%= notice %></p>
+
+<h1>Registro de Usuario Sisco Bank C.A</h1> #Vista principal
+
+<button button type="button" class="btn btn-dark btn-lg btn-block"><%= link_to "Registrar nuevo usuario", new_user_e_path %></button>
+
+<div id="user_es">
+  <% @user_es.each do |user_e| %>
+    <%= render user_e %>
+    <p>
+    <button button type="button" class="btn btn-outline-success"><%= link_to "Mostrar este usuario", user_e %></button>
+    </p>
+  <% end %>
+</div>
+

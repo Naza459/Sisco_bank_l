@@ -1,0 +1,64 @@
+<%= form_with(model: user_e) do |form| %>
+  <% if user_e.errors.any? %> #errores arrojados por validacion
+    <div style="color: red">
+      <h4><%= pluralize(user_e.errors.count, "error") %> prohibited this user_e from being saved:</h4>
+
+      <ul>
+        <% user_e.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %> 
+      </ul>
+    </div>
+  <% end %>
+
+  <div class= "container">
+  <form>
+
+  <div class="form-group row"> #Select de tipo de persona
+    <%= form.label :tipo_persona, style: "display: block", class:'col-sm-2' %>
+    <%= form.select :tipo_persona, options_for_select([["Natural", {class: 'high'}],["Juridica",{class: 'middle'}]]) %>
+    </div>
+
+  <div class="form-group col">
+    <%= form.label :Identificacion, style: "display: block", class:'col-sm-4' %>
+    <%= form.number_field :numero_documento %>
+  </div>
+
+  <div class="form-group col">
+    <%= form.label :fecha_inicial, style: "display: block", class:'col-sm-4' %>
+    <%= form.datetime_field :fecha_inicial %>
+  </div>
+
+  <div class="form-group col">
+    <%= form.label :fecha_vencimiento, style: "display: block", class:'col-sm-4' %>
+    <%= form.datetime_field :fecha_vencimiento %>
+  </div>
+
+  <div class="form-group col">
+    <%= form.label :nombre, style: "display: block", class:'col-sm-4' %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="form-group col">
+    <%= form.label :correo_electronico, style: "display: block", class:'col-sm-4'%>
+    <%= form.text_field :correo_electronico %>
+  </div>
+
+  <div class="form-group col">
+    <%= form.label :telefono_principal, style: "display: block", class:'col-sm-4' %>
+    <%= form.number_field :telefono_principal %>
+  </div>
+
+  <div class="form-group col">
+    <%= form.label :telefono_secundario, style: "display: block", class:'col-sm-4' %>
+    <%= form.number_field :telefono_secundario %>
+  </div>
+
+  <button type="submit" name="button" class='btn btn-primary'>
+  <span>Guardar</span>
+  </button>
+
+  </form>
+  </div>
+
+<% end %>

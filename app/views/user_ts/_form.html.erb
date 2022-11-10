@@ -1,0 +1,57 @@
+<%= form_with(model: user_t) do |form| %>
+  <% if user_t.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user_t.errors.count, "error") %> prohibited this user_t from being saved:</h2>
+
+      <ul>
+        <% user_t.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :tipo_persona, style: "display: block" %>
+    <%= form.text_area :tipo_persona %>
+  </div>
+
+  <div>
+    <%= form.label :numero_documento, style: "display: block" %>
+    <%= form.number_field :numero_documento %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_inicial, style: "display: block" %>
+    <%= form.datetime_field :fecha_inicial %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_vencimiento, style: "display: block" %>
+    <%= form.datetime_field :fecha_vencimiento %>
+  </div>
+
+  <div>
+    <%= form.label :nombre, style: "display: block" %>
+    <%= form.text_area :nombre %>
+  </div>
+
+  <div>
+    <%= form.label :correo_electronico, style: "display: block" %>
+    <%= form.text_area :correo_electronico %>
+  </div>
+
+  <div>
+    <%= form.label :telefono_principal, style: "display: block" %>
+    <%= form.number_field :telefono_principal %>
+  </div>
+
+  <div>
+    <%= form.label :telefono_secundario, style: "display: block" %>
+    <%= form.number_field :telefono_secundario %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

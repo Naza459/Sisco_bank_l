@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_persona: MyString
+  Text: MyString
+  numero_documento: MyString
+  Integer: MyString
+  fecha_inicial: MyString
+  datetime: MyString
+  fecha_vencimiento: MyString
+  datetime: MyString
+  nombre: MyString
+  Text: MyString
+  correo_electronico: MyString
+  Text: MyString
+  telefono_principal: MyString
+  Integer: MyString
+  telefono_secundario: MyString
+  Integer: MyString
+
+two:
+  tipo_persona: MyString
+  Text: MyString
+  numero_documento: MyString
+  Integer: MyString
+  fecha_inicial: MyString
+  datetime: MyString
+  fecha_vencimiento: MyString
+  datetime: MyString
+  nombre: MyString
+  Text: MyString
+  correo_electronico: MyString
+  Text: MyString
+  telefono_principal: MyString
+  Integer: MyString
+  telefono_secundario: MyString
+  Integer: MyString

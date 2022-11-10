@@ -1,0 +1,9 @@
+<h1 class="card-header">Editar Usuario</h1>
+#integracion del editar
+<%= render "form", user_e: @user_e %>
+
+#Botones 
+<div>
+<button type="button" class="btn btn-outline-info"><%= link_to "Mostrar este usuario", @user_e %></button> |
+<button type="button" class="btn btn-outline-warning"><%= link_to "Volver a usuario", user_es_path %></button>
+</div>
